@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #ECF0F1;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label contentDisplay="CENTER" layoutX="113.0" layoutY="21.0" prefHeight="40.0" prefWidth="84.0" text="Sign-UP">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="UserNameSU" focusColor="#18657f" labelFloat="true" layoutX="113.0" layoutY="85.0" onAction="#getSUNAme" prefHeight="40.0" prefWidth="600.0" promptText="UserName" />
+      <JFXTextField fx:id="PassWordSU" focusColor="#18657f" labelFloat="true" layoutX="113.0" layoutY="182.0" onAction="#getpassSU" prefHeight="40.0" prefWidth="600.0" promptText="Password" />
+      <JFXTextField fx:id="mailSU" focusColor="#18657f" labelFloat="true" layoutX="113.0" layoutY="276.0" onAction="#getmailSU" prefHeight="40.0" prefWidth="600.0" promptText="Mail" />
+      <JFXTextField fx:id="ageSU" focusColor="#18657f" labelFloat="true" layoutX="113.0" layoutY="376.0" onAction="#getAGESU" prefHeight="40.0" prefWidth="600.0" promptText="Age" />
+      <JFXTextField fx:id="occupation" focusColor="#18657f" labelFloat="true" layoutX="113.0" layoutY="467.0" onAction="#getoccupationSU" prefHeight="40.0" prefWidth="600.0" promptText="Occupation" />
+      <JFXTextField fx:id="dateSU" focusColor="#18657f" labelFloat="true" layoutX="113.0" layoutY="562.0" onAction="#getdateSU" prefHeight="40.0" prefWidth="600.0" promptText="DateofAccountCreation" />
+      <JFXButton fx:id="CREATEACCOUNT" buttonType="RAISED" layoutX="113.0" layoutY="649.0" onAction="#createacc" prefHeight="49.0" prefWidth="170.0" ripplerFill="#bbccff" style="-fx-background-color: #5DADE2;" text="Create My Account" />
+      <JFXButton fx:id="goback" buttonType="RAISED" layoutX="340.0" layoutY="649.0" onAction="#backtologin" prefHeight="49.0" prefWidth="170.0" ripplerFill="#ffcad5" style="-fx-background-color: #CD5C5C;" text="Take Me Back" />
+   </children>
+</AnchorPane>
