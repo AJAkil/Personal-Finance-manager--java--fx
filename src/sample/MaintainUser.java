@@ -52,6 +52,7 @@ public class MaintainUser {
         return "ERROR";
     }
 
+
     public String GiveUserpassword(String keyobj){
         if(usertable.get(keyobj)!=null)
             return usertable.get(keyobj).getLoginpass();
@@ -67,6 +68,12 @@ public class MaintainUser {
             name = itr.next();
             System.out.println(name + ": " + usertable.get(name).getLoginpass());
         }
+    }
+
+    public String GiveNameofUser(){
+        Set set = usertable.keySet(); // get set view of keys
+        Iterator<String> itr = set.iterator();     // get iterator
+        return itr.next();
     }
 
 

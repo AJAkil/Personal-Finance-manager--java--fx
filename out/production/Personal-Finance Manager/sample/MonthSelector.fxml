@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane layoutX="181.0" layoutY="75.0" prefHeight="618.0" prefWidth="1005.0" style="-fx-background-color: #ffffff;">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" />
+         </effect>
+         <children>
+            <Label layoutX="255.0" layoutY="150.0" prefHeight="21.0" prefWidth="587.0" text="Select Year and Month to view Your Finances">
+               <font>
+                  <Font name="Calibri Light" size="29.0" />
+               </font>
+            </Label>
+            <MenuButton layoutX="516.0" layoutY="228.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="137.0" style="-fx-alignment: #ffffff;" text="Select Month">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="January" />
+                  <MenuItem mnemonicParsing="false" text="February" />
+                  <MenuItem mnemonicParsing="false" text="March" />
+                  <MenuItem mnemonicParsing="false" text="April" />
+                  <MenuItem mnemonicParsing="false" text="May" />
+                  <MenuItem mnemonicParsing="false" text="June" />
+                  <MenuItem mnemonicParsing="false" text="July" />
+                  <MenuItem mnemonicParsing="false" text="August" />
+                  <MenuItem mnemonicParsing="false" text="September" />
+                  <MenuItem mnemonicParsing="false" text="October" />
+                  <MenuItem mnemonicParsing="false" text="November" />
+                  <MenuItem mnemonicParsing="false" text="December" />
+               </items>
+            </MenuButton>
+            <MenuButton layoutX="345.0" layoutY="228.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="137.0" style="-fx-alignment: #ffffff;" text="Select Year">
+              <items>
+                <MenuItem mnemonicParsing="false" text="2018" />
+                <MenuItem mnemonicParsing="false" text="2019" />
+                  <MenuItem mnemonicParsing="false" text="2020" />
+                  <MenuItem mnemonicParsing="false" text="2021" />
+                  <MenuItem mnemonicParsing="false" text="2022" />
+                  <MenuItem mnemonicParsing="false" text="2023" />
+                  <MenuItem mnemonicParsing="false" text="2024" />
+                  <MenuItem mnemonicParsing="false" text="2025" />
+                  <MenuItem mnemonicParsing="false" text="2026" />
+                  <MenuItem mnemonicParsing="false" text="2027" />
+                  <MenuItem mnemonicParsing="false" text="2028" />
+                  <MenuItem mnemonicParsing="false" text="2029" />
+              </items>
+            </MenuButton>
+            <Label layoutX="365.0" layoutY="356.0" prefHeight="21.0" prefWidth="137.0" text="First Time?" />
+            <JFXButton fx:id="BackFromMonthSelector" buttonType="RAISED" layoutX="553.0" layoutY="351.0" onAction="#GOback" prefHeight="31.0" prefWidth="89.0" text="Click Here" />
+            <JFXButton fx:id="Proceed" buttonType="RAISED" layoutX="459.0" layoutY="308.0" onAction="#ProceedTOFinance" prefHeight="31.0" prefWidth="89.0" style="-fx-background-color: #5DADE2;" text="Proceed" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

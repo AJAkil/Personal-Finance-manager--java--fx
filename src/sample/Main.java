@@ -68,6 +68,7 @@ public class Main extends Application {
         Controller control=loader.getController();
         control.getManager(UserHash);
         control.setMain(this);
+
     }
 
     public void ShowProfile() throws IOException{
@@ -102,6 +103,58 @@ public class Main extends Application {
         backdoor.setTitle("Quit");
         backdoor.setScene(exitscene);
         backdoor.showAndWait();
+    }
+
+    public void ShowMonthSetter() throws IOException{
+
+        FXMLLoader loader=new FXMLLoader();
+        loader.setLocation(getClass().getResource("MonthSelector.fxml"));
+        Parent root = loader.load();
+
+
+        Window.setTitle("Month Picker");
+        Window.setScene(new Scene(root, 1366, 768));
+        Window.show();
+
+        Controller control=loader.getController();
+        control.getManager(UserHash);
+        control.setMain(this);
+    }
+
+
+    public void ShowSettings() throws IOException{
+
+        FXMLLoader loader=new FXMLLoader();
+        loader.setLocation(getClass().getResource("Settings.fxml"));
+        Parent root = loader.load();
+
+
+        Window.setTitle("Settings");
+        Window.setScene(new Scene(root, 1366, 768));
+        Window.show();
+
+        Controller control=loader.getController();
+        control.getManager(UserHash);
+        control.setMain(this);
+    }
+
+    public void ShowFinances() throws IOException{
+
+        FXMLLoader loader=new FXMLLoader();
+        loader.setLocation(getClass().getResource("FinancialData.fxml"));
+        Parent root = loader.load();
+
+
+        Window.setTitle("Data");
+        Window.setScene(new Scene(root, 1366, 768));
+        Window.show();
+
+        MainFinanceController control=loader.getController();
+        control.setMain(this);
+
+        Controller actualControler = loader.getController();
+        actualControler.setMain(this);
+        actualControler.getManager(UserHash);
     }
 
 

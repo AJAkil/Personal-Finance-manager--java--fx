@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TabPane prefHeight="768.0" prefWidth="1366.0" side="LEFT" tabClosingPolicy="UNAVAILABLE" tabMinHeight="48.0" tabMinWidth="100.0">
+        <tabs>
+          <Tab style="-fx-background-color: #ffffff;" text="DashBoard" />
+          <Tab fx:id="MyProfiletab" text="My profile">
+               <content>
+                  <Pane prefHeight="678.0" prefWidth="1245.0">
+                     <children>
+                        <JFXTextField fx:id="testextfield" layoutX="254.0" layoutY="317.0" />
+                        <Label fx:id="Label" layoutX="254.0" layoutY="408.0" prefHeight="35.0" prefWidth="268.0" text="Label" />
+                        <JFXButton fx:id="change" buttonType="RAISED" layoutX="323.0" layoutY="533.0" onAction="#change" text="PRESS" />
+                     </children>
+                  </Pane>
+               </content>
+          </Tab>
+            <Tab text="Edit Finances">
+               <content>
+                  <AnchorPane />
+               </content>
+            </Tab>
+            <Tab text="EXIT">
+               <content>
+                  <AnchorPane />
+               </content>
+            </Tab>
+        </tabs>
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+      </TabPane>
+   </children>
+</AnchorPane>
